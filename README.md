@@ -1,51 +1,30 @@
-What You're Aiming For
 
-In this checkpoint, you will be performing a series of guided instructions to create a REST API by manipulating your database with mongoose.
+# Checkpoint Instructions
 
-PS: don't forget to comment on your code before submitting it.
+In this checkpoint, you will build a REST API using Mongoose and Express to manage a collection of users.
 
-Instructions
+## Steps
 
-Start a new Node JS project  with ‘ npm init ‘
-Install the mongoose and express and  .env
-Configure the environment variables with .env
-Lunch a server with express in the server.js file
-Connect your database locally or with mongo atlas
-The Folder structure should be like this :
-config/ .env
+1. Initialize a new Node.js project with `npm init`.
+2. Install the required dependencies: `mongoose`, `express`, and `dotenv`.
+3. Configure the environment variables in a `.env` file.
+4. Create a `server.js` file to launch the server.
+5. Connect to the database using Mongoose.
+6. Create a `models` folder and a `User.js` file inside it.
+7. Define a Mongoose schema in `User.js` and export the model.
+8. Create four routes in `server.js`:
+   - GET: Retrieve all users.
+   - POST: Add a new user to the database.
+   - PUT: Edit a user by ID.
+   - DELETE: Remove a user by ID.
+9. Use Mongoose methods to manipulate the data and return it in the response.
+10. Test the routes using Postman.
 
-Server.js
+## Useful Links
 
-     7. Create a models folder and a User.js file in it 
+- [dotenv](https://www.npmjs.com/package/dotenv)
+- [Express](https://expressjs.com/)
+- [Express Parameters and Query](https://coursework.vschool.io/express-params-and-query/)
+- [Mongoose](https://mongoosejs.com/)
+- [REST API Tutorial](https://www.youtube.com/watch?v=SLwpqD8n3d0)
 
-     8. In User.js you must define a mongoose Schema and export the model , you will use it in the server.js
-
-     9. The Folder structure should be like this : 
-
-config/ .env
-
-models/User.js
-
-Server.js
-
-     10. In the server.js create four routes : 
-
-       GET :  RETURN ALL USERS 
-
-       POST :  ADD A NEW USER TO THE DATABASE 
-
-       PUT : EDIT A USER BY ID 
-
-       DELETE : REMOVE A USER BY ID 
-
-NB : in each callback function you will use mongoose methods to manipulate your data and return it in the response
-
-     11.  Use postman to test each route.
-
-  Useful Links :
-
-.env : <https://www.npmjs.com/package/dotenv>
-Express js : <https://expressjs.com/>
-Req.params && req.query : <https://coursework.vschool.io/express-params-and-query/>
-Mongoose : <https://mongoosejs.com/>
-Rest api : <https://www.youtube.com/watch?v=SLwpqD8n3d0>
